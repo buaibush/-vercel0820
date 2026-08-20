@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ReadSphere - 悦读共赏，智识相连</title>
+    <title>悦读社 - 汇聚思想，悦享阅读</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Segoe UI', Tahoma, sans-serif;
+            font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         :root {
-            --primary: #1e3a5f;      /* 沉稳深青 */
-            --secondary: #3b5998;    /* 雅致靛蓝 */
-            --accent: #d97706;       /* 暖调琥珀金 */
-            --light: #fbf9f5;        /* 柔和书页暖白 */
-            --dark: #0f172a;         /* 深炭黑 */
-            --text: #334155;         /* 正文字体色 */
+            --primary: #1b2a4a;       /* 沉稳藏青 */
+            --secondary: #30476f;     /* 靛蓝 */
+            --accent: #d97736;        /* 暖调琥珀橙 */
+            --light: #f8f6f0;         /* 暖调书纸白 */
+            --dark: #0f172a;          /* 深墨色 */
+            --text: #334155;          /* 墨灰文字 */
             --white: #ffffff;
         }
 
@@ -36,7 +36,7 @@
             position: sticky;
             top: 0;
             z-index: 100;
-            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
         }
 
         .container {
@@ -54,14 +54,14 @@
         .logo {
             display: flex;
             align-items: center;
-            gap: 12px;
-            font-size: 1.6rem;
+            gap: 10px;
+            font-size: 1.8rem;
             font-weight: 700;
-            letter-spacing: 0.5px;
+            letter-spacing: 1px;
         }
 
         .logo i {
-            font-size: 1.8rem;
+            font-size: 1.9rem;
             color: var(--accent);
         }
 
@@ -103,7 +103,7 @@
         }
 
         .hero {
-            background: linear-gradient(rgba(15, 23, 42, 0.65), rgba(30, 58, 95, 0.55)), url('https://images.unsplash.com/photo-1507842229451-79b1be897a20?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');
+            background: linear-gradient(rgba(15, 23, 42, 0.72), rgba(15, 23, 42, 0.6)), url('https://images.unsplash.com/photo-1507842229451-244974f13426?auto=format&fit=crop&w=2000&q=80');
             background-size: cover;
             background-position: center;
             height: 80vh;
@@ -119,17 +119,17 @@
         }
 
         .hero h1 {
-            font-size: 3.2rem;
+            font-size: 3.4rem;
             margin-bottom: 1.2rem;
-            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
-            letter-spacing: 1px;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
         }
 
         .hero p {
-            font-size: 1.25rem;
-            margin-bottom: 2rem;
-            font-weight: 300;
+            font-size: 1.3rem;
+            margin-bottom: 2.2rem;
             opacity: 0.95;
+            font-weight: 300;
         }
 
         .btn {
@@ -143,17 +143,17 @@
             transition: all 0.3s ease;
             border: none;
             cursor: pointer;
-            box-shadow: 0 4px 10px rgba(217, 119, 6, 0.3);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
         }
 
         .btn:hover {
-            background-color: #b45309;
+            background-color: #be6126;
             transform: translateY(-3px);
-            box-shadow: 0 6px 14px rgba(217, 119, 6, 0.4);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         }
 
         section {
-            padding: 5rem 0;
+            padding: 5.5rem 0;
         }
 
         .section-title {
@@ -162,7 +162,7 @@
         }
 
         .section-title h2 {
-            font-size: 2.3rem;
+            font-size: 2.4rem;
             color: var(--primary);
             margin-bottom: 1rem;
             position: relative;
@@ -175,17 +175,17 @@
             bottom: -10px;
             left: 50%;
             transform: translateX(-50%);
-            width: 60px;
+            width: 70px;
             height: 3px;
             background-color: var(--accent);
             border-radius: 2px;
         }
 
         .section-title p {
-            color: #64748b;
-            max-width: 650px;
+            color: var(--text);
+            max-width: 700px;
             margin: 0 auto;
-            margin-top: 1rem;
+            opacity: 0.85;
         }
 
         .about-content {
@@ -198,13 +198,14 @@
         .about-img {
             border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
         }
 
         .about-img img {
             width: 100%;
-            height: auto;
+            height: 100%;
             display: block;
+            object-fit: cover;
             transition: transform 0.5s ease;
         }
 
@@ -213,13 +214,14 @@
         }
 
         .about-text h3 {
-            font-size: 1.8rem;
-            margin-bottom: 1.2rem;
+            font-size: 1.9rem;
+            margin-bottom: 1.5rem;
             color: var(--primary);
         }
 
         .about-text p {
-            margin-bottom: 1.2rem;
+            margin-bottom: 1.4rem;
+            font-size: 1.05rem;
             color: var(--text);
         }
 
@@ -235,9 +237,9 @@
             padding: 2.2rem 1rem;
             background-color: var(--white);
             border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
-            border: 1px solid rgba(226, 232, 240, 0.8);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
             transition: transform 0.3s ease;
+            border: 1px solid rgba(0,0,0,0.03);
         }
 
         .stat-item:hover {
@@ -245,20 +247,21 @@
         }
 
         .stat-item i {
-            font-size: 2.2rem;
+            font-size: 2.4rem;
             color: var(--accent);
             margin-bottom: 1rem;
         }
 
         .stat-item h3 {
-            font-size: 2.2rem;
+            font-size: 2.4rem;
             color: var(--primary);
             margin-bottom: 0.4rem;
+            font-weight: 700;
         }
 
         .stat-item p {
-            color: #64748b;
-            font-size: 0.95rem;
+            color: var(--text);
+            font-weight: 500;
         }
 
         .initiatives {
@@ -268,16 +271,17 @@
         .initiatives-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
+            gap: 2.2rem;
         }
 
         .initiative-card {
             background-color: var(--light);
             border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
             transition: transform 0.3s ease;
-            border: 1px solid #f1f5f9;
+            display: flex;
+            flex-direction: column;
         }
 
         .initiative-card:hover {
@@ -302,235 +306,18 @@
 
         .initiative-content {
             padding: 1.8rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
         }
 
         .initiative-content h3 {
-            font-size: 1.4rem;
-            margin-bottom: 0.8rem;
+            font-size: 1.45rem;
+            margin-bottom: 0.9rem;
             color: var(--primary);
         }
 
         .initiative-content p {
             margin-bottom: 1.5rem;
-            color: var(--text);
-            font-size: 0.95rem;
-        }
-
-        .cta {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: var(--white);
-            text-align: center;
-            padding: 5.5rem 0;
-        }
-
-        .cta h2 {
-            font-size: 2.4rem;
-            margin-bottom: 1.2rem;
-        }
-
-        .cta p {
-            font-size: 1.15rem;
-            margin-bottom: 2.2rem;
-            max-width: 650px;
-            margin-left: auto;
-            margin-right: auto;
-            opacity: 0.9;
-        }
-
-        .cta .btn {
-            background-color: var(--white);
-            color: var(--primary);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        }
-
-        .cta .btn:hover {
-            background-color: var(--accent);
-            color: var(--white);
-        }
-
-        footer {
-            background-color: var(--dark);
-            color: #94a3b8;
-            padding: 4rem 0 1.5rem;
-        }
-
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 2.5rem;
-            margin-bottom: 3rem;
-        }
-
-        .footer-column h3 {
-            font-size: 1.2rem;
-            color: var(--white);
-            margin-bottom: 1.5rem;
-            position: relative;
-            padding-bottom: 10px;
-        }
-
-        .footer-column h3::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 35px;
-            height: 2px;
-            background-color: var(--accent);
-        }
-
-        .footer-column p {
-            margin-bottom: 0.8rem;
-            font-size: 0.95rem;
-        }
-
-        .footer-links {
-            list-style: none;
-        }
-
-        .footer-links li {
-            margin-bottom: 0.7rem;
-        }
-
-        .footer-links li a {
-            color: #94a3b8;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            font-size: 0.95rem;
-        }
-
-        .footer-links li a:hover {
-            color: var(--accent);
-            padding-left: 6px;
-        }
-
-        .social-links {
-            display: flex;
-            gap: 0.8rem;
-            margin-top: 1.2rem;
-        }
-
-        .social-links a {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 38px;
-            height: 38px;
-            background-color: rgba(255, 255, 255, 0.08);
-            border-radius: 50%;
-            color: var(--white);
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-
-        .social-links a:hover {
-            background-color: var(--accent);
-            transform: translateY(-3px);
-        }
-
-        .copyright {
-            text-align: center;
-            padding-top: 2rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.08);
-            font-size: 0.9rem;
-        }
-
-        .mobile-menu {
-            display: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-        }
-
-        /* 响应式断点适配 */
-        @media (max-width: 992px) {
-            .about-content {
-                grid-template-columns: 1fr;
-            }
-            .initiatives-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .footer-content {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .stats {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.2rem;
-            }
-            .hero p {
-                font-size: 1.05rem;
-            }
-            nav ul {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                background-color: var(--primary);
-                flex-direction: column;
-                padding: 1rem 0;
-                text-align: center;
-                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-            }
-            nav ul.active {
-                display: flex;
-            }
-            nav ul li {
-                margin: 0;
-                padding: 0.7rem 0;
-            }
-            .mobile-menu {
-                display: block;
-            }
-            .initiatives-grid {
-                grid-template-columns: 1fr;
-            }
-            .footer-content {
-                grid-template-columns: 1fr;
-            }
-            .stats {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        .counter {
-            transition: all 0.5s ease;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="container nav-container">
-            <div class="logo">
-                <i class="fas fa-book-open-reader"></i>
-                <span>ReadSphere 悦读</span>
-            </div>
-            <nav>
-                <div class="mobile-menu">
-                    <i class="fas fa-bars"></i>
-                </div>
-                <ul>
-                    <li><a href="#home">首页</a></li>
-                    <li><a href="#about">关于我们</a></li>
-                    <li><a href="#initiatives">共读专栏</a></li>
-                    <li><a href="#get-involved">加入共读</a></li>
-                    <li><a href="#contact">联系我们</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <section class="hero" id="home">
-        <div class="container hero-content">
-            <h1>浸润书香 · 连接思想与远方</h1>
-            <p>加入全球青年阅读者计划，在字里行间探索世界，让深度阅读重塑认知与思考。</p>
-            <a href="#get-involved" class="btn">开启共读之旅</a>
-        </div>
-    </section>
-
-    <section id="about">
-        <div
+            flex-grow: 1;
+            font
